@@ -10,18 +10,23 @@ import data from './data';
 
 function App() {
   const cardValues = data.map(value => {
-    return <Card img={`./images/${value.coverImg}`} ratingValue={value.stats.rating} ratingCustomerNo={value.stats.reviewCount} cost={value.price}
-    location={value.location} slotLeft = {value.openSpots === 0 ? 'topleft noslot': 'topleft slotAvailable'} 
-    title={value.title} />
+    return <Card
+      img={`./images/${value.coverImg}`}
+      ratingValue={value.stats.rating}
+      ratingCustomerNo={value.stats.reviewCount}
+      cost={value.price}
+      location={value.location} 
+      openSpots={value.openSpots}
+      title={value.title} />
   })
   return (
     <div >
       <Navbar />
       <Hero />
       <div className='cards-cc'>
-      {cardValues}
+        {cardValues}
       </div>
-     
+
     </div>
   )
 }
