@@ -10,9 +10,9 @@ function App() {
       <Navbar />
       <Hero />
       <div className='cards-cc'>
-      <Card img="../src/assets/images/image12.png" ratingValue="5.0" ratingCustomerNo="6" cost="136"/>
-      <Card img="../src/assets/images/wedding-photography1.png" ratingValue="5.0" ratingCustomerNo="30" cost="125"/>
-      <Card img="../src/assets/images/mountain-bike1.png" ratingValue="4.8" ratingCustomerNo="9" cost="50"/>
+      <Card img="../../src/assets/images/image12.png" ratingValue="5.0" ratingCustomerNo="6" cost="136"/>
+      <Card img="../../src/assets/images/wedding-photography1.png" ratingValue="5.0" ratingCustomerNo="30" cost="125"/>
+      <Card img="../../src/assets/images/mountain-bike1.png" ratingValue="4.8" ratingCustomerNo="9" cost="50"/>
       </div>
      
     </div>
