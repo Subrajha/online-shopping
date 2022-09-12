@@ -10,7 +10,7 @@ export default function Card(props) {
                 <span>{props.location}</span>
             </div>
 
-            <p>Life lessons with subrajha thiagarajan</p>
+            <p>{props.title}</p>
             <p><strong>Rs{props.cost}</strong> / Person</p>
         </div>
     )

@@ -11,7 +11,8 @@ import data from './data';
 function App() {
   const cardValues = data.map(value => {
     return <Card img={`./images/${value.coverImg}`} ratingValue={value.stats.rating} ratingCustomerNo={value.stats.reviewCount} cost={value.price}
-    location={value.location} slotLeft = {value.openSpots === 0 ? 'topleft noslot': 'topleft slotAvailable'} />
+    location={value.location} slotLeft = {value.openSpots === 0 ? 'topleft noslot': 'topleft slotAvailable'} 
+    title={value.title} />
   })
   return (
     <div >
