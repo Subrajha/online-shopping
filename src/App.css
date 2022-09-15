@@ -43,7 +43,8 @@ nav {
 }
 .cards-cc{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  overflow-y: auto;
 }
 .card--badge {
   position: absolute;
